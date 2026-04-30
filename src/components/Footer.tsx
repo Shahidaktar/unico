@@ -44,7 +44,7 @@ export default function Footer() {
             W1J 7T1, United Kingdom
           </p>
           <a href="mailto:concierge@unicovoyages.com" className="text-sm font-medium border-b border-luxury-ink/20 pb-1">
-            concierge@unicovoyages.com
+            concierge@unicovoyage.com
           </a>
         </div>
       </div>
