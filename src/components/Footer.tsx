@@ -7,10 +7,10 @@ export default function Footer() {
             <img 
               src="https://vrfacwizigigcpowkrye.supabase.co/storage/v1/object/public/General/unico-logo.png" 
               alt="Unico Logo" 
-              className="h-10 w-auto"
+              className="h-24 w-auto"
               referrerPolicy="no-referrer"
             />
-            <span className="text-2xl font-bold uppercase tracking-wider">Unico</span>
+            {/* <span className="text-2xl font-bold uppercase tracking-wider">Unico</span> */}
           </div>
           <p className="text-luxury-muted text-sm font-light leading-relaxed max-w-xs">
             A bespoke atelier for private travel and unique life experiences. Redefining luxury through the lens of quiet immersion.
