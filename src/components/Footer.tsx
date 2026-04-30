@@ -51,7 +51,7 @@ export default function Footer() {
 
       <div className="pt-12 border-t border-luxury-ink/5 flex flex-col md:flex-row justify-between items-center gap-8">
         <p className="text-[10px] uppercase tracking-[0.2em] text-luxury-muted opacity-60">
-          © {new Date().getFullYear()} Unico Voyages. All Rights Reserved.
+          © {new Date().getFullYear()} Unico Voyage. All Rights Reserved.
         </p>
         <div className="flex gap-12">
             <a href="#" className="text-[10px] uppercase tracking-[0.2em] text-luxury-muted opacity-60 hover:opacity-100">Instagram</a>
