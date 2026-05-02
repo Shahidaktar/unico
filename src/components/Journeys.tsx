@@ -25,6 +25,7 @@ const journeys = [
   }
 ];
 
+
 function JourneyItem({ journey, index }: { journey: typeof journeys[0], index: number }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -50,10 +51,10 @@ function JourneyItem({ journey, index }: { journey: typeof journeys[0], index: n
           style={{ y: imageY }}
           src={journey.image}
           alt={journey.title}
-          className="w-full h-[120%] object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-[2s] ease-out"
+          className="w-full h-[120%] object-cover opacity-100 grayscale-0 md:opacity-50 md:grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-[2s] ease-out"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-luxury-ink/20 group-hover:bg-transparent transition-colors duration-1000" />
+        <div className="absolute inset-0 bg-luxury-ink/20 hidden md:block group-hover:bg-transparent transition-colors duration-1000" />
       </div>
       
       <div className={`w-full md:w-[45%] p-12 md:p-32 flex flex-col justify-center z-10 ${
@@ -61,8 +62,8 @@ function JourneyItem({ journey, index }: { journey: typeof journeys[0], index: n
       }`}>
         <div className="flex items-center gap-4 mb-8 opacity-40">
            <span className="text-[10px] tracking-[0.5em] uppercase font-light">{journey.location}</span>
-           <div className="w-8 h-px bg-white" />
-           <span className="text-[10px] tracking-[0.5em] uppercase font-light">{journey.year}</span>
+           {/* <div className="w-8 h-px bg-white" /> */}
+           {/* <span className="text-[10px] tracking-[0.5em] uppercase font-light">{journey.year}</span> */}
         </div>
         
         <h3 className="text-5xl md:text-8xl font-light mb-12 font-serif tracking-tight leading-[0.85] group-hover:italic transition-all duration-700">
@@ -113,3 +114,4 @@ export default function Journeys() {
     </section>
   );
 }
+

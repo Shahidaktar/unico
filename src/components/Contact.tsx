@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
   return (
@@ -29,9 +30,9 @@ export default function Contact() {
           <p className="text-white/60 text-lg md:text-xl font-light mb-16 max-w-xl mx-auto leading-relaxed">
             Your private travel designer will craft something entirely your own. No templates, no compromises.
           </p>
-          <button className="px-12 py-5 bg-white text-luxury-ink text-xs uppercase tracking-[0.4em] font-semibold hover:bg-transparent hover:text-white border border-white transition-all duration-500">
+          <Link to="/contact" className="px-12 py-5 bg-white text-luxury-ink text-xs uppercase tracking-[0.4em] font-semibold hover:bg-transparent hover:text-white border border-white transition-all duration-500">
             Begin Your Journey
-          </button>
+          </Link>
         </motion.div>
       </div>
 

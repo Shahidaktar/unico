@@ -71,7 +71,7 @@ export default function Hero() {
               transition={{ duration: 1.2, delay: 1, ease: "easeOut" }}
               className="text-white/50 text-base md:text-lg font-light max-w-sm leading-relaxed tracking-wide italic"
             >
-              Curating unique life experiences for the world’s most discerning travelers since 2012.
+              Curating unique life experiences for the world’s most discerning travelers.
             </motion.p>
 
             <motion.div
@@ -99,7 +99,7 @@ export default function Hero() {
           transition={{ duration: 1.5, delay: 1.2 }}
           className="text-white text-[10px] tracking-[1em] uppercase vertical-text font-light"
         >
-          Unico Voyages
+          Unico Voyage
         </motion.div>
       </div>
 

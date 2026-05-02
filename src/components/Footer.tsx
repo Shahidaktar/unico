@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer className="bg-luxury-cream pt-32 pb-16 px-8 md:px-16 border-t border-luxury-ink/5">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
         <div className="col-span-1 md:col-span-1">
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-2">
             <img 
               src="https://vrfacwizigigcpowkrye.supabase.co/storage/v1/object/public/General/unico-logo.png" 
               alt="Unico Logo" 
-              className="h-24 w-auto"
+              className="h-36 w-auto"
               referrerPolicy="no-referrer"
             />
-            {/* <span className="text-2xl font-bold uppercase tracking-wider">Unico</span> */}
+        
           </div>
           <p className="text-luxury-muted text-sm font-light leading-relaxed max-w-xs">
             A bespoke atelier for private travel and unique life experiences. Redefining luxury through the lens of quiet immersion.
@@ -20,10 +22,11 @@ export default function Footer() {
         <div>
           <h4 className="text-[10px] uppercase tracking-[0.3em] font-semibold mb-8 text-luxury-muted">Journeys</h4>
           <nav className="flex flex-col gap-4">
-            <a href="#" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Private Islands</a>
-            <a href="#" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Wilderness Expeditions</a>
-            <a href="#" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Heritage Retreats</a>
-            <a href="#" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Urban Escapes</a>
+            <Link to="/property" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Featured Property</Link>
+            <Link to="/" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Private Islands</Link>
+            <Link to="/" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Wilderness Expeditions</Link>
+            <Link to="/" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Heritage Retreats</Link>
+            <Link to="/" className="text-sm font-light hover:opacity-100 transition-opacity opacity-60">Urban Escapes</Link>
           </nav>
         </div>
 
@@ -38,10 +41,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-[10px] uppercase tracking-[0.3em] font-semibold mb-8 text-luxury-muted">Studio</h4>
+          <h4 className="text-[10px] uppercase tracking-[0.3em] font-semibold mb-8 text-luxury-muted">The Studio</h4>
           <p className="text-sm font-light opacity-60 leading-loose mb-6">
-            18 Curzon St, London<br />
-            W1J 7T1, United Kingdom
+            Viraj Building, 5th Floor, Plot 124, S. V. Road, <br />
+            Khar West, Mumbai 400052 (India)
           </p>
           <a href="mailto:concierge@unicovoyages.com" className="text-sm font-medium border-b border-luxury-ink/20 pb-1">
             concierge@unicovoyage.com
