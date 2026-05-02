@@ -17,7 +17,7 @@ export default function Header({ variant = 'light' }: { variant?: 'light' | 'dar
 
   const navLinks = [
     { name: 'Philosophy', href: '/' },
-    { name: 'Destinations', href: '/' },
+    { name: 'Destinations', href: '/property' },
     { name: 'Experiences', href: '/' },
     { name: 'The Studio', href: 'contact' },
   ];
