@@ -19,7 +19,7 @@ export default function Header({ variant = 'light' }: { variant?: 'light' | 'dar
     { name: 'Philosophy', href: '/' },
     { name: 'Destinations', href: '/' },
     { name: 'Experiences', href: '/' },
-    { name: 'The Studio', href: '/' },
+    { name: 'The Studio', href: 'contact' },
   ];
 
   const isDarkBase = variant === 'dark';
