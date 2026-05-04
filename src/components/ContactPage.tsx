@@ -188,20 +188,40 @@ export default function ContactPage() {
               </AnimatePresence>
             </div>
 
-            <div className="space-y-4">
-               {formData.destination && (
-                 <div className="flex items-center gap-4 text-[10px] uppercase tracking-widest opacity-40">
-                   <div className="w-1.5 h-1.5 rounded-full bg-luxury-ink" />
-                   <span>{formData.destination}</span>
-                 </div>
-               )}
-               {formData.tripType && (
-                 <div className="flex items-center gap-4 text-[10px] uppercase tracking-widest opacity-40">
-                   <div className="w-1.5 h-1.5 rounded-full bg-luxury-ink" />
-                   <span>{formData.tripType}</span>
-                 </div>
-               )}
-            </div>
+           <div className="space-y-4 mt-4">
+  {(Object.keys(formData) as Array<keyof FormData>).map((key) => {
+    const value = formData[key];
+    
+    // Only show the summary if the field has a value
+    if (!value) return null;
+
+    // Mapping keys to more elegant display labels
+   const labels: Record<keyof FormData, string> = {
+  destination: "Discovery",
+  dates: "Departure",
+  guests: "Company",
+  tripType: "Essence",
+  budget: "Caliber",
+  name: "Identity",
+  email: "Connection"
+};
+
+    return (
+      <motion.div 
+        key={key}
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 0.4, x: 0 }}
+        className="flex items-center gap-4 text-[10px] uppercase tracking-widest"
+      >
+        <div className="w-1.5 h-1.5 rounded-full bg-luxury-ink " />
+        <div className="flex flex-col gap-1">
+          <span className="opacity-50 text-[8px] tracking-[0.5em]">{labels[key]}</span>
+          <span>{value}</span>
+        </div>
+      </motion.div>
+    );
+  })}
+</div>
           </div>
 
           {/* Right: Step Inputs */}
